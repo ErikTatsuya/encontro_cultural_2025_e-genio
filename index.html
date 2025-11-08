@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa e-Genio</title>
+    <link rel="icon" href="image.png" type="image/png">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="blue_div">
+        <div class="welcome" style="text-align: center;">
+            <h2>Seja bem-vindo!</h2>
+            <h1>O que deseja saber?</h1>
+            <h4 id="h4_click_2_show">clique na opção que deseja.</h4>
+        </div>
+        <div class="links-wrapper">
+            <div class="div_hyper_content" id="div_srch_links">
+                <li><a href="oq_e_egenio.html"><h3>O que é o e-Genio?</h3></a></li>
+                <li><a href="como_foi_desenvolvimento.html"><h3>Como foi o desenvolvimento?</h3></a></li>
+                <li><a href="como_funciona_ia.html"><h3>Como funciona a IA do e-Genio?</h3></a></li>
+                <li><a href="diferenca.html"><h3>O que diferecia a MARIA das outras IAs?</h3></a></li>
+                <li><a href="suporte.html"><h3>Qual é o suporte técnico do e-Genio?</h3></a></li>
+                <li><a href="conteudo_egenio.html"><h3>Qual é o conteúdo do e-Genio?</h3></a></li>
+                <li><a href="importancia.html"><h3>Qual é a importância do e-Genio?</h3></a></li>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <button onclick="hide_and_show()" class="button" id="btn_show">Mostrar Menos.</button>
+        </div>
+    </div>
+
+    
+    <div class="blue_div" style="text-align: center;">
+        <div class="div_img go_in">
+            <img src="images/egenio.png" style="width: 200px; height: 220;">
+        </div>
+        <div class="div_img go_in">
+            <img src="data:image/webp;base64,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" alt="e-Genio funciona em todos os dispositivos">
+        </div>
+        <video src="video/ec-2025.mp4" type="video/mp4" id="video" controls></video>
+    </div>
+
+    <div class="div_e">
+        <a href="https://egenio.objetivo.br/">
+            <button class="button">Ir para o e-Genio?</button>
+        </a>
+    </div>
+    
+    <p style="padding-top: 15%;">
+        Feito por Erik Tatsuya
+        <br>
+        Integrantes do grupo: Kevyn Felix, Lucas Ferreira, Gustavo Quirino,
+        Benicio Santana e Arthur Manoel.
+        <br>
+        Orientadores: Lubaia e Lina.
+    </p>
+    <script src="script/index.js" id="show_btn"></script>
+</body>
+</html>
