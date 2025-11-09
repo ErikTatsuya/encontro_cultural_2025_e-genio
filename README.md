@@ -1,2 +1,3 @@
-https://eriktatsuya.github.io/ec-2025_e-genio/index.html
+https://eriktatsuya.github.io/encontro_cultural_2025_e-genio/index.html
+
 
