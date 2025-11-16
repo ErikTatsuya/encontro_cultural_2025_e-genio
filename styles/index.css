@@ -1,10 +1,10 @@
 
 body{
-    background: linear-gradient(45deg,rgba(255, 255, 0, 0.5),rgba(0, 0, 255, 0.5)) no-repeat;
+    background: linear-gradient(45deg,rgba(255, 255, 0, 1),rgba(0, 0, 255, 1)) no-repeat;
     background-size: cover;
-    min-height: 100%;
-    min-width: 100%;
+    min-height: 100vh;
     overflow-x: hidden;
+    overflow-y: unset;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -20,6 +20,8 @@ img{
 video{
     width: 100%;
     height: auto;
+    max-width: 720px;
+    max-height: auto;
     box-shadow: 32px 32px 64px rgba(0, 0, 0, 0.3);
     animation-name: SlideFromRight;
     animation-duration: 2s;
@@ -28,7 +30,7 @@ video{
 .blue_div{
     margin: 1rem;
     padding: 1rem;
-    background-color: aliceblue;
+    background-color: rgba(240, 248, 255, 0.45);
     border: solid 1px;
     border-color: rgba(255, 255, 255, 0.2);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
@@ -42,7 +44,7 @@ video{
 
 .div_hyper_content{
     display: inline-block;
-    background-color: whitesmoke;
+    background-color: rgba(240, 248, 255, 0.45);
     border: solid 1px;
     border-color: rgba(255, 255, 255, 0.2);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
@@ -50,6 +52,7 @@ video{
     padding-left: 2rem;
     padding-right: 2rem;
 
+    backdrop-filter: blur(2px);
     font-size: 1rem;
 
     animation-name: SlideFromRight;
@@ -57,10 +60,12 @@ video{
 }
 
 .div_e{
-    text-align: center;
-    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin: 1rem;
     padding: 1rem;
-    background-color: aliceblue;
+    background-color:rgba(240, 248, 255, 0.45);
     border: solid 1px;
     border-color: rgba(255, 255, 255, 0.2);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
